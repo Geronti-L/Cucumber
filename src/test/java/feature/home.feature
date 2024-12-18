@@ -1,28 +1,9 @@
 @test
-Feature: kkk
+Feature: DressUp
   @test1
-  Scenario: kkk
-    Given I type to a page
-    When I turn  search field to red
-    Then I wait 5 seconds
-    When I click search button
-    Then I wait 5 seconds
-
-    When I refresh browser
-#    Then I go back to page
-
-#   Then I quit chrome
+  Scenario: მთავარ გვერდზე დაკლიკება
+    Given User land on page "www.dressup.ge"
+    Then Title should be "Dressup.ge - ონლაინ მაღაზია | ტანსაცმელი, ფეხსაცმელი, აქსესუარები | საერთაშორისო ბრენდები | უფასო მიტანა"
+    When User accepts popup
 
 
-
-  @test2
-  Scenario: kkk1
-    Given I type to a page
-    When I turn search field to green
-    Then I wait 5 seconds
-    When I click search button
-    Then I wait 5 seconds
-    When I turn  search field to red
-
-
-    Then I quit chrome
